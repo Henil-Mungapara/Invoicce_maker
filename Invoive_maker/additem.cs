@@ -34,11 +34,18 @@ namespace Invoive_maker
           
             connection();
             itemfillgrid();
+            gridset();
+
         }
         void connection()
         {
             con = new SqlConnection(s);
             con.Open();
+        }
+
+        void gridset() {
+            itemlistdataGridView.Columns["Edit"].DisplayIndex = 9; // Assuming the first column is Item_Id
+            itemlistdataGridView.Columns["Delete"].DisplayIndex = 10;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -193,8 +200,16 @@ namespace Invoive_maker
 
         private void itemcancelbutton_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
+            additemitemname.Text = String.Empty;
+            additemdescription.Text = String.Empty;
+            additemitemprice.Text = String.Empty;
+            additemgoods.Checked = false;
+            additemservice.Checked = false;
+            additemcgst.Text = String.Empty;
+            additemsgst.Text = String.Empty;
+            additemigst.Text = String.Empty;
+            additemutgst.Text = String.Empty;
+
         }
     }
 }

@@ -257,7 +257,7 @@ namespace Invoive_maker
                 
             }
             else {
-                MessageBox.Show("Nakki Thay to kejo tyare karsu Nirate Logout...Aavjo !!");
+                MessageBox.Show("OK!!");
             }
         }
 
@@ -268,7 +268,29 @@ namespace Invoive_maker
 
         private void maindashboardpanel_Paint(object sender, PaintEventArgs e)
         {
+            InvoicePrint ip = new InvoicePrint();
 
+            // Load the form into the panel
+            LoadFormIntoPanel8(ip);
         }
+
+        private void LoadFormIntoPanel8(InvoicePrint ip)
+        {
+            // Clear existing controls in the panel
+            maindashboardpanel.Controls.Clear();
+
+            // Set the form's TopLevel property to false
+            ip.TopLevel = false;
+
+            // Set the form's Dock property to fill the panel
+            ip.Dock = DockStyle.Fill;
+
+            // Add the form to the panel's controls
+            maindashboardpanel.Controls.Add(ip);
+
+            // Show the form
+            ip.Show();
+        }
+
     }
 }
