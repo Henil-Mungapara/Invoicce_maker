@@ -63,7 +63,7 @@ namespace Invoive_maker
             this.IGST = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UTGST = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.additemtoolStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemlistdataGridView)).BeginInit();
@@ -309,7 +309,7 @@ namespace Invoive_maker
             this.itemcancelbutton.Name = "itemcancelbutton";
             this.itemcancelbutton.Size = new System.Drawing.Size(125, 43);
             this.itemcancelbutton.TabIndex = 11;
-            this.itemcancelbutton.Text = "CANCEL";
+            this.itemcancelbutton.Text = "CLEAR";
             this.itemcancelbutton.UseVisualStyleBackColor = false;
             this.itemcancelbutton.Click += new System.EventHandler(this.itemcancelbutton_Click);
             // 
@@ -339,7 +339,7 @@ namespace Invoive_maker
             this.IGST,
             this.UTGST,
             this.Edit,
-            this.Remove});
+            this.Delete});
             this.itemlistdataGridView.Location = new System.Drawing.Point(28, 730);
             this.itemlistdataGridView.Name = "itemlistdataGridView";
             this.itemlistdataGridView.RowHeadersWidth = 51;
@@ -356,7 +356,6 @@ namespace Invoive_maker
             this.Item_Id.HeaderText = "Item_Id";
             this.Item_Id.MinimumWidth = 6;
             this.Item_Id.Name = "Item_Id";
-            this.Item_Id.ReadOnly = true;
             this.Item_Id.Width = 125;
             // 
             // Item_Name
@@ -432,14 +431,14 @@ namespace Invoive_maker
             this.Edit.UseColumnTextForButtonValue = true;
             this.Edit.Width = 125;
             // 
-            // Remove
+            // Delete
             // 
-            this.Remove.HeaderText = "Remove";
-            this.Remove.MinimumWidth = 6;
-            this.Remove.Name = "Remove";
-            this.Remove.Text = "Remove";
-            this.Remove.UseColumnTextForButtonValue = true;
-            this.Remove.Width = 125;
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 125;
             // 
             // additem
             // 
@@ -512,6 +511,6 @@ namespace Invoive_maker
         private System.Windows.Forms.DataGridViewTextBoxColumn IGST;
         private System.Windows.Forms.DataGridViewTextBoxColumn UTGST;
         private System.Windows.Forms.DataGridViewButtonColumn Edit;
-        private System.Windows.Forms.DataGridViewButtonColumn Remove;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

@@ -31,9 +31,6 @@ namespace Invoive_maker
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.dashboardpanel = new System.Windows.Forms.ToolStrip();
-            this.logodashboardtollstrip = new System.Windows.Forms.ToolStrip();
-            this.maindashboardpanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.dashboardtoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.additemtoolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -43,6 +40,9 @@ namespace Invoive_maker
             this.adminpaneltoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.helptoolStripButton = new System.Windows.Forms.ToolStripButton();
             this.logouttoolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.logodashboardtollstrip = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
+            this.maindashboardpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.dashboardpanel.SuspendLayout();
             this.logodashboardtollstrip.SuspendLayout();
             this.SuspendLayout();
@@ -71,42 +71,6 @@ namespace Invoive_maker
             this.dashboardpanel.Size = new System.Drawing.Size(230, 1055);
             this.dashboardpanel.TabIndex = 1;
             this.dashboardpanel.Text = "toolStrip1";
-            // 
-            // logodashboardtollstrip
-            // 
-            this.logodashboardtollstrip.BackColor = System.Drawing.Color.Teal;
-            this.logodashboardtollstrip.ImageScalingSize = new System.Drawing.Size(40, 40);
-            this.logodashboardtollstrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton12});
-            this.logodashboardtollstrip.Location = new System.Drawing.Point(230, 0);
-            this.logodashboardtollstrip.Name = "logodashboardtollstrip";
-            this.logodashboardtollstrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.logodashboardtollstrip.Size = new System.Drawing.Size(1694, 74);
-            this.logodashboardtollstrip.TabIndex = 2;
-            this.logodashboardtollstrip.Text = "toolStrip2";
-            // 
-            // maindashboardpanel
-            // 
-            this.maindashboardpanel.BackColor = System.Drawing.SystemColors.Control;
-            this.maindashboardpanel.Location = new System.Drawing.Point(268, 98);
-            this.maindashboardpanel.Name = "maindashboardpanel";
-            this.maindashboardpanel.Size = new System.Drawing.Size(1773, 881);
-            this.maindashboardpanel.TabIndex = 3;
-            // 
-            // toolStripButton12
-            // 
-            this.toolStripButton12.BackColor = System.Drawing.Color.Teal;
-            this.toolStripButton12.Font = new System.Drawing.Font("Segoe UI", 17F);
-            this.toolStripButton12.ForeColor = System.Drawing.SystemColors.Control;
-            this.toolStripButton12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton12.Image")));
-            this.toolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton12.Margin = new System.Windows.Forms.Padding(5);
-            this.toolStripButton12.Name = "toolStripButton12";
-            this.toolStripButton12.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton12.Size = new System.Drawing.Size(340, 64);
-            this.toolStripButton12.Text = "Hi ! Company Name";
-            this.toolStripButton12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolStripButton12.Click += new System.EventHandler(this.toolStripButton12_Click);
             // 
             // toolStripButton8
             // 
@@ -222,6 +186,43 @@ namespace Invoive_maker
             this.logouttoolStripButton7.Size = new System.Drawing.Size(128, 46);
             this.logouttoolStripButton7.Text = "Logout";
             this.logouttoolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
+            // 
+            // logodashboardtollstrip
+            // 
+            this.logodashboardtollstrip.BackColor = System.Drawing.Color.Teal;
+            this.logodashboardtollstrip.ImageScalingSize = new System.Drawing.Size(40, 40);
+            this.logodashboardtollstrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton12});
+            this.logodashboardtollstrip.Location = new System.Drawing.Point(230, 0);
+            this.logodashboardtollstrip.Name = "logodashboardtollstrip";
+            this.logodashboardtollstrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.logodashboardtollstrip.Size = new System.Drawing.Size(1694, 74);
+            this.logodashboardtollstrip.TabIndex = 2;
+            this.logodashboardtollstrip.Text = "toolStrip2";
+            // 
+            // toolStripButton12
+            // 
+            this.toolStripButton12.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton12.Font = new System.Drawing.Font("Segoe UI", 17F);
+            this.toolStripButton12.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripButton12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton12.Image")));
+            this.toolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton12.Margin = new System.Windows.Forms.Padding(5);
+            this.toolStripButton12.Name = "toolStripButton12";
+            this.toolStripButton12.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripButton12.Size = new System.Drawing.Size(340, 64);
+            this.toolStripButton12.Text = "Hi ! Company Name";
+            this.toolStripButton12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolStripButton12.Click += new System.EventHandler(this.toolStripButton12_Click);
+            // 
+            // maindashboardpanel
+            // 
+            this.maindashboardpanel.BackColor = System.Drawing.SystemColors.Control;
+            this.maindashboardpanel.Location = new System.Drawing.Point(268, 98);
+            this.maindashboardpanel.Name = "maindashboardpanel";
+            this.maindashboardpanel.Size = new System.Drawing.Size(1773, 881);
+            this.maindashboardpanel.TabIndex = 3;
+            this.maindashboardpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.maindashboardpanel_Paint);
             // 
             // Dashboard
             // 

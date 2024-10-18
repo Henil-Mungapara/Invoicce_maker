@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -137,11 +138,11 @@
     <Compile Include="List Item.Designer.cs">
       <DependentUpon>List Item.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelDashboard.cs">
+    <Compile Include="paneldashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelDashboard.Designer.cs">
-      <DependentUpon>PanelDashboard.cs</DependentUpon>
+    <Compile Include="paneldashboard.Designer.cs">
+      <DependentUpon>paneldashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="profile.cs">
       <SubType>Form</SubType>
@@ -181,8 +182,8 @@
     <EmbeddedResource Include="List Item.resx">
       <DependentUpon>List Item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelDashboard.resx">
-      <DependentUpon>PanelDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="paneldashboard.resx">
+      <DependentUpon>paneldashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.cs</DependentUpon>

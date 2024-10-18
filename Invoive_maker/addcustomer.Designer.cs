@@ -31,7 +31,6 @@ namespace Invoive_maker
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addcustomer));
             this.addcustomertoolStrip = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@ namespace Invoive_maker
             this.Customer_GST = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.addcustomertoolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listcustomerdataGridView)).BeginInit();
             this.SuspendLayout();
@@ -69,18 +69,6 @@ namespace Invoive_maker
             this.addcustomertoolStrip.TabIndex = 2;
             this.addcustomertoolStrip.Text = "toolStrip1";
             this.addcustomertoolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.addcustomertoolStrip_ItemClicked);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(5);
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Padding = new System.Windows.Forms.Padding(8);
-            this.toolStripButton1.Size = new System.Drawing.Size(239, 60);
-            this.toolStripButton1.Text = "Add Customer";
             // 
             // label2
             // 
@@ -204,7 +192,7 @@ namespace Invoive_maker
             this.addcustomercustomercancel.Name = "addcustomercustomercancel";
             this.addcustomercustomercancel.Size = new System.Drawing.Size(124, 41);
             this.addcustomercustomercancel.TabIndex = 15;
-            this.addcustomercustomercancel.Text = "CANCEL";
+            this.addcustomercustomercancel.Text = "CLEAR";
             this.addcustomercustomercancel.UseVisualStyleBackColor = false;
             this.addcustomercustomercancel.Click += new System.EventHandler(this.customercancel_Click);
             // 
@@ -296,6 +284,18 @@ namespace Invoive_maker
             this.Remove.Text = "Remove";
             this.Remove.UseColumnTextForButtonValue = true;
             this.Remove.Width = 125;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(5);
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Padding = new System.Windows.Forms.Padding(8);
+            this.toolStripButton1.Size = new System.Drawing.Size(239, 60);
+            this.toolStripButton1.Text = "Add Customer";
             // 
             // addcustomer
             // 

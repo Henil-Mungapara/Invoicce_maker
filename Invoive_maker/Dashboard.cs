@@ -20,7 +20,7 @@ namespace Invoive_maker
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            PanelDashboard pd = new PanelDashboard();
+            paneldashboard pd = new paneldashboard();
 
             // Load the form into the panel
             LoadFormIntoPanel1(pd);
@@ -29,14 +29,14 @@ namespace Invoive_maker
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             // Create an instance of the PanelDashboard form
-            PanelDashboard pd = new PanelDashboard();
+            paneldashboard pd = new paneldashboard();
 
             // Load the form into the panel
             LoadFormIntoPanel1(pd);
 
         }
 
-        private void LoadFormIntoPanel1(PanelDashboard pd) // Use the correct type here
+        private void LoadFormIntoPanel1(paneldashboard pd) // Use the correct type here
         {
             // Clear existing controls in the panel
             maindashboardpanel.Controls.Clear();
@@ -54,7 +54,7 @@ namespace Invoive_maker
             // Show the form
             pd.Show();
         }
-
+        
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
@@ -266,6 +266,9 @@ namespace Invoive_maker
 
         }
 
-       
+        private void maindashboardpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

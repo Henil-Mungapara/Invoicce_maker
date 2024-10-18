@@ -56,6 +56,11 @@ namespace Invoive_maker
             this.invoicemakeigst = new System.Windows.Forms.TextBox();
             this.invoicemakengst = new System.Windows.Forms.TextBox();
             this.invoicemakeutgst = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.invoicemakedateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.invoicemakeitemprice = new System.Windows.Forms.TextBox();
+            this.invoicemakesavedata = new System.Windows.Forms.Button();
             this.invoicemaketoolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.invoicemakedataGridView)).BeginInit();
             this.SuspendLayout();
@@ -120,17 +125,18 @@ namespace Invoive_maker
             this.invoicemakeadd.TabIndex = 3;
             this.invoicemakeadd.Text = "ADD";
             this.invoicemakeadd.UseVisualStyleBackColor = false;
+            this.invoicemakeadd.Click += new System.EventHandler(this.invoicemakeadd_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(313, 361);
+            this.label3.Location = new System.Drawing.Point(313, 312);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 25);
+            this.label3.Size = new System.Drawing.Size(156, 25);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Item Qty               :";
+            this.label3.Text = "Item Qty             :";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
@@ -157,6 +163,7 @@ namespace Invoive_maker
             this.invoicemakedataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.invoicemakedataGridView.Size = new System.Drawing.Size(1404, 331);
             this.invoicemakedataGridView.TabIndex = 6;
+            this.invoicemakedataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.invoicemakedataGridView_CellClick);
             this.invoicemakedataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.invoicemakedataGridView_CellContentClick);
             this.invoicemakedataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.invoicemakedataGridView_CellEndEdit);
             // 
@@ -183,10 +190,9 @@ namespace Invoive_maker
             // invoicemakeitemqty
             // 
             this.invoicemakeitemqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invoicemakeitemqty.Location = new System.Drawing.Point(485, 358);
-            this.invoicemakeitemqty.Multiline = true;
+            this.invoicemakeitemqty.Location = new System.Drawing.Point(485, 311);
             this.invoicemakeitemqty.Name = "invoicemakeitemqty";
-            this.invoicemakeitemqty.Size = new System.Drawing.Size(274, 31);
+            this.invoicemakeitemqty.Size = new System.Drawing.Size(274, 26);
             this.invoicemakeitemqty.TabIndex = 9;
             // 
             // invoicemakecomboBox
@@ -243,6 +249,7 @@ namespace Invoive_maker
             this.invoicemakeupdate.TabIndex = 12;
             this.invoicemakeupdate.Text = "UPDATE";
             this.invoicemakeupdate.UseVisualStyleBackColor = false;
+            this.invoicemakeupdate.Click += new System.EventHandler(this.invoicemakeupdate_Click);
             // 
             // button4
             // 
@@ -255,6 +262,7 @@ namespace Invoive_maker
             this.button4.TabIndex = 13;
             this.button4.Text = "DELETE";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -273,8 +281,9 @@ namespace Invoive_maker
             this.invoicemakeitemdescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.invoicemakeitemdescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invoicemakeitemdescription.Location = new System.Drawing.Point(485, 210);
+            this.invoicemakeitemdescription.Multiline = true;
             this.invoicemakeitemdescription.Name = "invoicemakeitemdescription";
-            this.invoicemakeitemdescription.Size = new System.Drawing.Size(278, 26);
+            this.invoicemakeitemdescription.Size = new System.Drawing.Size(278, 29);
             this.invoicemakeitemdescription.TabIndex = 15;
             // 
             // label6
@@ -371,13 +380,70 @@ namespace Invoive_maker
             this.invoicemakeutgst.Size = new System.Drawing.Size(273, 26);
             this.invoicemakeutgst.TabIndex = 26;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(311, 411);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(158, 25);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Print Date           :";
+            // 
+            // invoicemakedateTimePicker
+            // 
+            this.invoicemakedateTimePicker.Location = new System.Drawing.Point(485, 414);
+            this.invoicemakedateTimePicker.Name = "invoicemakedateTimePicker";
+            this.invoicemakedateTimePicker.Size = new System.Drawing.Size(274, 22);
+            this.invoicemakedateTimePicker.TabIndex = 28;
+            this.invoicemakedateTimePicker.Value = new System.DateTime(2024, 10, 1, 13, 21, 45, 0);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(311, 362);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(157, 25);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Item price           :";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // invoicemakeitemprice
+            // 
+            this.invoicemakeitemprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoicemakeitemprice.Location = new System.Drawing.Point(485, 363);
+            this.invoicemakeitemprice.Name = "invoicemakeitemprice";
+            this.invoicemakeitemprice.Size = new System.Drawing.Size(274, 26);
+            this.invoicemakeitemprice.TabIndex = 30;
+            // 
+            // invoicemakesavedata
+            // 
+            this.invoicemakesavedata.BackColor = System.Drawing.Color.Teal;
+            this.invoicemakesavedata.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.invoicemakesavedata.ForeColor = System.Drawing.SystemColors.Control;
+            this.invoicemakesavedata.Location = new System.Drawing.Point(796, 937);
+            this.invoicemakesavedata.Name = "invoicemakesavedata";
+            this.invoicemakesavedata.Size = new System.Drawing.Size(158, 53);
+            this.invoicemakesavedata.TabIndex = 31;
+            this.invoicemakesavedata.Text = "Save Data";
+            this.invoicemakesavedata.UseVisualStyleBackColor = false;
+            this.invoicemakesavedata.Click += new System.EventHandler(this.invoicemakesavedata_Click);
+            // 
             // invoicemake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1769, 973);
+            this.ClientSize = new System.Drawing.Size(1769, 1067);
+            this.Controls.Add(this.invoicemakesavedata);
+            this.Controls.Add(this.invoicemakeitemprice);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.invoicemakedateTimePicker);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.invoicemakeutgst);
             this.Controls.Add(this.invoicemakengst);
             this.Controls.Add(this.invoicemakeigst);
@@ -444,5 +510,10 @@ namespace Invoive_maker
         private System.Windows.Forms.TextBox invoicemakeigst;
         private System.Windows.Forms.TextBox invoicemakengst;
         private System.Windows.Forms.TextBox invoicemakeutgst;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker invoicemakedateTimePicker;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox invoicemakeitemprice;
+        private System.Windows.Forms.Button invoicemakesavedata;
     }
 }
