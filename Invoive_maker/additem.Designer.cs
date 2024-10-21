@@ -348,7 +348,7 @@ namespace Invoive_maker
             this.itemlistdataGridView.RowHeadersWidth = 51;
             this.itemlistdataGridView.RowTemplate.Height = 100;
             this.itemlistdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.itemlistdataGridView.Size = new System.Drawing.Size(1751, 371);
+            this.itemlistdataGridView.Size = new System.Drawing.Size(1721, 371);
             this.itemlistdataGridView.TabIndex = 14;
             this.itemlistdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.itemlistdataGridView_CellClick);
             this.itemlistdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.itemlistdataGridView_CellContentClick);
@@ -463,7 +463,7 @@ namespace Invoive_maker
             this.additemcrystalReportViewer.Cursor = System.Windows.Forms.Cursors.Default;
             this.additemcrystalReportViewer.Location = new System.Drawing.Point(842, 145);
             this.additemcrystalReportViewer.Name = "additemcrystalReportViewer";
-            this.additemcrystalReportViewer.Size = new System.Drawing.Size(919, 527);
+            this.additemcrystalReportViewer.Size = new System.Drawing.Size(907, 527);
             this.additemcrystalReportViewer.TabIndex = 16;
             // 
             // additem

@@ -34,12 +34,12 @@ namespace Invoive_maker
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.invoiceprintbutton = new System.Windows.Forms.Button();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.choosedate = new System.Windows.Forms.Label();
-            this.invoiceprintdateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.date1 = new System.Windows.Forms.Label();
-            this.date2 = new System.Windows.Forms.Label();
-            this.invoiceprintstartdateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.invoiceprintenddateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.specificdateLabel = new System.Windows.Forms.Label();
+            this.specificdatedateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.startdateLabel = new System.Windows.Forms.Label();
+            this.enddateLabel = new System.Windows.Forms.Label();
+            this.startdateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.enddateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.selectdate = new System.Windows.Forms.Label();
             this.invoiceprintcomboBox = new System.Windows.Forms.ComboBox();
             this.invoiceprinttoolStrip.SuspendLayout();
@@ -92,59 +92,59 @@ namespace Invoive_maker
             this.crystalReportViewer1.Size = new System.Drawing.Size(1255, 734);
             this.crystalReportViewer1.TabIndex = 12;
             // 
-            // choosedate
+            // specificdateLabel
             // 
-            this.choosedate.AutoSize = true;
-            this.choosedate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.choosedate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.choosedate.Location = new System.Drawing.Point(33, 188);
-            this.choosedate.Name = "choosedate";
-            this.choosedate.Size = new System.Drawing.Size(138, 25);
-            this.choosedate.TabIndex = 13;
-            this.choosedate.Text = "Choose Date :";
+            this.specificdateLabel.AutoSize = true;
+            this.specificdateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.specificdateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.specificdateLabel.Location = new System.Drawing.Point(33, 188);
+            this.specificdateLabel.Name = "specificdateLabel";
+            this.specificdateLabel.Size = new System.Drawing.Size(138, 25);
+            this.specificdateLabel.TabIndex = 13;
+            this.specificdateLabel.Text = "Choose Date :";
             // 
-            // invoiceprintdateTimePicker
+            // specificdatedateTimePicker
             // 
-            this.invoiceprintdateTimePicker.Location = new System.Drawing.Point(177, 191);
-            this.invoiceprintdateTimePicker.Name = "invoiceprintdateTimePicker";
-            this.invoiceprintdateTimePicker.Size = new System.Drawing.Size(231, 22);
-            this.invoiceprintdateTimePicker.TabIndex = 14;
+            this.specificdatedateTimePicker.Location = new System.Drawing.Point(177, 191);
+            this.specificdatedateTimePicker.Name = "specificdatedateTimePicker";
+            this.specificdatedateTimePicker.Size = new System.Drawing.Size(231, 22);
+            this.specificdatedateTimePicker.TabIndex = 14;
             // 
-            // date1
+            // startdateLabel
             // 
-            this.date1.AutoSize = true;
-            this.date1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.date1.Location = new System.Drawing.Point(33, 239);
-            this.date1.Name = "date1";
-            this.date1.Size = new System.Drawing.Size(110, 25);
-            this.date1.TabIndex = 15;
-            this.date1.Text = "Start Date :";
+            this.startdateLabel.AutoSize = true;
+            this.startdateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startdateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.startdateLabel.Location = new System.Drawing.Point(33, 239);
+            this.startdateLabel.Name = "startdateLabel";
+            this.startdateLabel.Size = new System.Drawing.Size(110, 25);
+            this.startdateLabel.TabIndex = 15;
+            this.startdateLabel.Text = "Start Date :";
             // 
-            // date2
+            // enddateLabel
             // 
-            this.date2.AutoSize = true;
-            this.date2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.date2.Location = new System.Drawing.Point(33, 278);
-            this.date2.Name = "date2";
-            this.date2.Size = new System.Drawing.Size(109, 25);
-            this.date2.TabIndex = 16;
-            this.date2.Text = "End Date  :";
+            this.enddateLabel.AutoSize = true;
+            this.enddateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enddateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.enddateLabel.Location = new System.Drawing.Point(33, 278);
+            this.enddateLabel.Name = "enddateLabel";
+            this.enddateLabel.Size = new System.Drawing.Size(109, 25);
+            this.enddateLabel.TabIndex = 16;
+            this.enddateLabel.Text = "End Date  :";
             // 
-            // invoiceprintstartdateTimePicker
+            // startdateTimePicker
             // 
-            this.invoiceprintstartdateTimePicker.Location = new System.Drawing.Point(177, 242);
-            this.invoiceprintstartdateTimePicker.Name = "invoiceprintstartdateTimePicker";
-            this.invoiceprintstartdateTimePicker.Size = new System.Drawing.Size(231, 22);
-            this.invoiceprintstartdateTimePicker.TabIndex = 17;
+            this.startdateTimePicker.Location = new System.Drawing.Point(177, 242);
+            this.startdateTimePicker.Name = "startdateTimePicker";
+            this.startdateTimePicker.Size = new System.Drawing.Size(231, 22);
+            this.startdateTimePicker.TabIndex = 17;
             // 
-            // invoiceprintenddateTimePicker
+            // enddateTimePicker
             // 
-            this.invoiceprintenddateTimePicker.Location = new System.Drawing.Point(177, 278);
-            this.invoiceprintenddateTimePicker.Name = "invoiceprintenddateTimePicker";
-            this.invoiceprintenddateTimePicker.Size = new System.Drawing.Size(231, 22);
-            this.invoiceprintenddateTimePicker.TabIndex = 18;
+            this.enddateTimePicker.Location = new System.Drawing.Point(177, 278);
+            this.enddateTimePicker.Name = "enddateTimePicker";
+            this.enddateTimePicker.Size = new System.Drawing.Size(231, 22);
+            this.enddateTimePicker.TabIndex = 18;
             // 
             // selectdate
             // 
@@ -167,6 +167,7 @@ namespace Invoive_maker
             this.invoiceprintcomboBox.Name = "invoiceprintcomboBox";
             this.invoiceprintcomboBox.Size = new System.Drawing.Size(231, 24);
             this.invoiceprintcomboBox.TabIndex = 20;
+            this.invoiceprintcomboBox.TextChanged += new System.EventHandler(this.invoiceprintcomboBox_TextChanged);
             // 
             // InvoicePrint
             // 
@@ -175,12 +176,12 @@ namespace Invoive_maker
             this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.invoiceprintcomboBox);
             this.Controls.Add(this.selectdate);
-            this.Controls.Add(this.invoiceprintenddateTimePicker);
-            this.Controls.Add(this.invoiceprintstartdateTimePicker);
-            this.Controls.Add(this.date2);
-            this.Controls.Add(this.date1);
-            this.Controls.Add(this.invoiceprintdateTimePicker);
-            this.Controls.Add(this.choosedate);
+            this.Controls.Add(this.enddateTimePicker);
+            this.Controls.Add(this.startdateTimePicker);
+            this.Controls.Add(this.enddateLabel);
+            this.Controls.Add(this.startdateLabel);
+            this.Controls.Add(this.specificdatedateTimePicker);
+            this.Controls.Add(this.specificdateLabel);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.invoiceprintbutton);
             this.Controls.Add(this.invoiceprinttoolStrip);
@@ -203,12 +204,12 @@ namespace Invoive_maker
         private System.Windows.Forms.Button invoiceprintbutton;
         //private CachedCrystalReport1 cachedCrystalReport11;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private System.Windows.Forms.Label choosedate;
-        private System.Windows.Forms.DateTimePicker invoiceprintdateTimePicker;
-        private System.Windows.Forms.Label date1;
-        private System.Windows.Forms.Label date2;
-        private System.Windows.Forms.DateTimePicker invoiceprintstartdateTimePicker;
-        private System.Windows.Forms.DateTimePicker invoiceprintenddateTimePicker;
+        private System.Windows.Forms.Label specificdateLabel;
+        private System.Windows.Forms.DateTimePicker specificdatedateTimePicker;
+        private System.Windows.Forms.Label startdateLabel;
+        private System.Windows.Forms.Label enddateLabel;
+        private System.Windows.Forms.DateTimePicker startdateTimePicker;
+        private System.Windows.Forms.DateTimePicker enddateTimePicker;
         private System.Windows.Forms.Label selectdate;
         private System.Windows.Forms.ComboBox invoiceprintcomboBox;
     }

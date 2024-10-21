@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace Invoive_maker
 {
@@ -24,6 +26,9 @@ namespace Invoive_maker
         DataTable dt;
         String s = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\munga\Source\Repos\Invoicce_maker\Invoive_maker\Invoice_maker.mdf;Integrated Security=True";
         int id;
+        private CrystalDecisions.CrystalReports.Engine.ReportDocument cr = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+
+        static string Crypath = "";
         public addcustomer()
         {
             InitializeComponent();
@@ -157,6 +162,24 @@ namespace Invoive_maker
                 customerfillgrid();
                 MessageBox.Show("Hello ! Your Data Is Successfully Delete.....!!");
             }
+        }
+
+        private void addcustomerinvoice_Click(object sender, EventArgs e)
+        {
+            connection();
+            da = new SqlDataAdapter("select * from Add_Customer", con);
+            ds = new DataSet();
+            da.Fill(ds);
+
+            string xml = @"C:/Users/munga/source/repos/Invoicce_maker/Invoive_maker/datatwo.xml";
+            ds.WriteXmlSchema(xml);
+
+            Crypath = @"C:/Users/munga/source/repos/Invoicce_maker/Invoive_maker/customerinvoice.rpt";
+            cr.Load(Crypath);
+            cr.SetDataSource(ds);
+            cr.Database.Tables[0].SetDataSource(ds);
+            cr.Refresh();
+            crystalReportViewer1.ReportSource = cr;
         }
     }
 }

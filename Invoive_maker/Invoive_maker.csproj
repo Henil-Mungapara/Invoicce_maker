@@ -135,6 +135,12 @@
     <Compile Include="Customer List.Designer.cs">
       <DependentUpon>Customer List.cs</DependentUpon>
     </Compile>
+    <Compile Include="customerinvoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>customerinvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer List.resx">
       <DependentUpon>Customer List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerinvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>customerinvoice.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

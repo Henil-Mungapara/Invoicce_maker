@@ -27,11 +27,15 @@ namespace Invoive_maker
 
         static string Crypath = "";
 
+        public EventHandler ComboBoxSelectType_SelectedIndexChanged { get; }
 
         public InvoicePrint()
         {
             InitializeComponent();
+
+           
         }
+    
         void connection() {
             con = new SqlConnection(s);
             con.Open();
@@ -56,38 +60,48 @@ namespace Invoive_maker
 
         }
 
-        //void datesetup() {
-
-        //    connection();
-        //    if (invoiceprintcomboBox.Text == "Specific Range")
-        //    {
-        //        choosedate.Text = "Choose Date";
-        //        invoiceprintdateTimePicker.Visible = false;
-        //        invoiceprintstartdateTimePicker.Visible = true;
-        //        invoiceprintenddateTimePicker.Visible = true;
-        //    }
-
-        //    else if (invoiceprintcomboBox.Text == "Specific Date")
-        //    {
-        //        date1.Text = "From";
-        //        date2.Text = "To";
-        //        invoiceprintdateTimePicker.Visible = true;
-        //        invoiceprintstartdateTimePicker.Visible = false;
-        //        invoiceprintenddateTimePicker.Visible = false;
-        //    }
-        //    else
-        //    {
-        //        invoiceprintdateTimePicker.Visible = false;
-        //        invoiceprintstartdateTimePicker.Visible = false;
-        //        invoiceprintenddateTimePicker.Visible = false;
-               
-        //    }
-        //}
-
+      
         private void InvoicePrint_Load(object sender, EventArgs e)
         {
             connection();
-            //datesetup();
+            // datesetup();
+            startdateTimePicker.Visible = false;
+            enddateTimePicker.Visible = false;
+            specificdatedateTimePicker.Visible = false;
+
+            // If you have labels for these, set their visibility as well
+            startdateLabel.Visible = false;
+            enddateLabel.Visible = false;
+            specificdateLabel.Visible = false;
+        }
+
+        private void invoiceprintcomboBox_TextChanged(object sender, EventArgs e)
+        {
+            connection();
+            // Update the visibility based on the selected type
+            if (invoiceprintcomboBox.Text == "Specific Range")
+            {
+                startdateTimePicker.Visible = true;
+                enddateTimePicker.Visible = true;
+                specificdatedateTimePicker.Visible = false;
+
+                // If you have labels for these, set their visibility as well
+                startdateLabel.Visible = true;
+                enddateLabel.Visible = true;
+                specificdateLabel.Visible = false;
+            }
+            else if (invoiceprintcomboBox.Text == "Specific Date")
+            {
+                startdateTimePicker.Visible = false;
+                enddateTimePicker.Visible = false;
+                specificdatedateTimePicker.Visible = true;
+
+                // If you have labels for these, set their visibility as well
+                startdateLabel.Visible = false;
+                enddateLabel.Visible = false;
+                specificdateLabel.Visible = true;
+            }
+           
         }
     }
     
