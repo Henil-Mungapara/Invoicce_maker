@@ -222,7 +222,7 @@ namespace Invoive_maker
             this.maindashboardpanel.Name = "maindashboardpanel";
             this.maindashboardpanel.Size = new System.Drawing.Size(1773, 881);
             this.maindashboardpanel.TabIndex = 3;
-            this.maindashboardpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.maindashboardpanel_Paint);
+            //this.maindashboardpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.maindashboardpanel_Paint);
             // 
             // Dashboard
             // 

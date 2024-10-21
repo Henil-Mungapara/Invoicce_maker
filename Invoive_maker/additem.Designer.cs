@@ -64,6 +64,8 @@ namespace Invoive_maker
             this.UTGST = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.additemcrystalReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.additemtoolStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemlistdataGridView)).BeginInit();
@@ -80,6 +82,7 @@ namespace Invoive_maker
             this.additemtoolStrip.Size = new System.Drawing.Size(1900, 64);
             this.additemtoolStrip.TabIndex = 0;
             this.additemtoolStrip.Text = "toolStrip1";
+            this.additemtoolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.additemtoolStrip_ItemClicked);
             // 
             // toolStripButton1
             // 
@@ -98,7 +101,7 @@ namespace Invoive_maker
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(481, 226);
+            this.label3.Location = new System.Drawing.Point(195, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 25);
             this.label3.TabIndex = 3;
@@ -109,7 +112,7 @@ namespace Invoive_maker
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(489, 335);
+            this.label4.Location = new System.Drawing.Point(195, 334);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 25);
             this.label4.TabIndex = 4;
@@ -121,7 +124,7 @@ namespace Invoive_maker
             this.additemgoods.BackColor = System.Drawing.Color.White;
             this.additemgoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.additemgoods.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.additemgoods.Location = new System.Drawing.Point(708, 289);
+            this.additemgoods.Location = new System.Drawing.Point(396, 289);
             this.additemgoods.Margin = new System.Windows.Forms.Padding(4);
             this.additemgoods.Name = "additemgoods";
             this.additemgoods.Padding = new System.Windows.Forms.Padding(5);
@@ -137,7 +140,7 @@ namespace Invoive_maker
             this.additemservice.AutoSize = true;
             this.additemservice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.additemservice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.additemservice.Location = new System.Drawing.Point(817, 289);
+            this.additemservice.Location = new System.Drawing.Point(510, 289);
             this.additemservice.Margin = new System.Windows.Forms.Padding(4);
             this.additemservice.Name = "additemservice";
             this.additemservice.Padding = new System.Windows.Forms.Padding(5);
@@ -151,7 +154,7 @@ namespace Invoive_maker
             // additemitemname
             // 
             this.additemitemname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.additemitemname.Location = new System.Drawing.Point(670, 153);
+            this.additemitemname.Location = new System.Drawing.Point(363, 145);
             this.additemitemname.Multiline = true;
             this.additemitemname.Name = "additemitemname";
             this.additemitemname.Size = new System.Drawing.Size(290, 32);
@@ -160,7 +163,7 @@ namespace Invoive_maker
             // additemitemprice
             // 
             this.additemitemprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.additemitemprice.Location = new System.Drawing.Point(670, 335);
+            this.additemitemprice.Location = new System.Drawing.Point(363, 335);
             this.additemitemprice.Multiline = true;
             this.additemitemprice.Name = "additemitemprice";
             this.additemitemprice.Size = new System.Drawing.Size(290, 32);
@@ -169,7 +172,7 @@ namespace Invoive_maker
             // additemdescription
             // 
             this.additemdescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.additemdescription.Location = new System.Drawing.Point(670, 202);
+            this.additemdescription.Location = new System.Drawing.Point(363, 193);
             this.additemdescription.Multiline = true;
             this.additemdescription.Name = "additemdescription";
             this.additemdescription.Size = new System.Drawing.Size(290, 80);
@@ -187,7 +190,7 @@ namespace Invoive_maker
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(380, 418);
+            this.panel1.Location = new System.Drawing.Point(28, 401);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(796, 212);
             this.panel1.TabIndex = 7;
@@ -292,7 +295,7 @@ namespace Invoive_maker
             this.itemaddbutton.BackColor = System.Drawing.Color.Teal;
             this.itemaddbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.itemaddbutton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.itemaddbutton.Location = new System.Drawing.Point(660, 652);
+            this.itemaddbutton.Location = new System.Drawing.Point(216, 629);
             this.itemaddbutton.Name = "itemaddbutton";
             this.itemaddbutton.Size = new System.Drawing.Size(109, 43);
             this.itemaddbutton.TabIndex = 10;
@@ -305,7 +308,7 @@ namespace Invoive_maker
             this.itemcancelbutton.BackColor = System.Drawing.Color.Teal;
             this.itemcancelbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.itemcancelbutton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.itemcancelbutton.Location = new System.Drawing.Point(792, 652);
+            this.itemcancelbutton.Location = new System.Drawing.Point(349, 629);
             this.itemcancelbutton.Name = "itemcancelbutton";
             this.itemcancelbutton.Size = new System.Drawing.Size(125, 43);
             this.itemcancelbutton.TabIndex = 11;
@@ -318,7 +321,7 @@ namespace Invoive_maker
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(481, 160);
+            this.label2.Location = new System.Drawing.Point(195, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 25);
             this.label2.TabIndex = 2;
@@ -440,6 +443,29 @@ namespace Invoive_maker
             this.Delete.UseColumnTextForButtonValue = true;
             this.Delete.Width = 125;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(494, 629);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 43);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "INVOICE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // additemcrystalReportViewer
+            // 
+            this.additemcrystalReportViewer.ActiveViewIndex = -1;
+            this.additemcrystalReportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.additemcrystalReportViewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.additemcrystalReportViewer.Location = new System.Drawing.Point(842, 145);
+            this.additemcrystalReportViewer.Name = "additemcrystalReportViewer";
+            this.additemcrystalReportViewer.Size = new System.Drawing.Size(919, 527);
+            this.additemcrystalReportViewer.TabIndex = 16;
+            // 
             // additem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -447,6 +473,8 @@ namespace Invoive_maker
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1900, 1102);
+            this.Controls.Add(this.additemcrystalReportViewer);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.itemlistdataGridView);
             this.Controls.Add(this.itemcancelbutton);
             this.Controls.Add(this.itemaddbutton);
@@ -512,5 +540,7 @@ namespace Invoive_maker
         private System.Windows.Forms.DataGridViewTextBoxColumn UTGST;
         private System.Windows.Forms.DataGridViewButtonColumn Edit;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.Button button1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer additemcrystalReportViewer;
     }
 }

@@ -123,6 +123,12 @@
     <Compile Include="additem.Designer.cs">
       <DependentUpon>additem.cs</DependentUpon>
     </Compile>
+    <Compile Include="additeminvoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>additeminvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Customer List.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,12 +166,6 @@
     <Compile Include="help.Designer.cs">
       <DependentUpon>help.cs</DependentUpon>
     </Compile>
-    <Compile Include="invoiceeprint.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>invoiceeprint.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="invoicemake.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +177,12 @@
     </Compile>
     <Compile Include="InvoicePrint.Designer.cs">
       <DependentUpon>InvoicePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invoiceprint1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>invoiceprint.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Invoice_makerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -219,6 +225,10 @@
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="additeminvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>additeminvoice.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer List.resx">
       <DependentUpon>Customer List.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,15 +247,15 @@
     <EmbeddedResource Include="help.resx">
       <DependentUpon>help.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="invoiceeprint.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>invoiceeprint.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="invoicemake.resx">
       <DependentUpon>invoicemake.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoicePrint.resx">
       <DependentUpon>InvoicePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoiceprint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>invoiceprint1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="List Item.resx">
       <DependentUpon>List Item.cs</DependentUpon>

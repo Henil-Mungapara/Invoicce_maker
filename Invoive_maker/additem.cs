@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 
 namespace Invoive_maker
@@ -20,9 +22,13 @@ namespace Invoive_maker
         SqlDataAdapter da;
         DataSet ds;
         DataTable dt;
-        String s = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\munga\source\repos\Invoive_maker\Invoive_maker\Invoice_maker.mdf;Integrated Security=True";
+        String s = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\munga\Source\Repos\Invoicce_maker\Invoive_maker\Invoice_maker.mdf;Integrated Security=True";
         int id;
         String itemtype;
+
+        private CrystalDecisions.CrystalReports.Engine.ReportDocument cr = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+
+        static string Crypath = "";
 
         public additem()
         {
@@ -46,6 +52,7 @@ namespace Invoive_maker
         void gridset() {
             itemlistdataGridView.Columns["Edit"].DisplayIndex = 9; // Assuming the first column is Item_Id
             itemlistdataGridView.Columns["Delete"].DisplayIndex = 10;
+            itemlistdataGridView.Columns["Item_Price"].DisplayIndex = 8;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -210,6 +217,29 @@ namespace Invoive_maker
             additemigst.Text = String.Empty;
             additemutgst.Text = String.Empty;
 
+        }
+
+        private void additemtoolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            connection();
+            da = new SqlDataAdapter("select * from Add_Item", con);
+            ds = new DataSet();
+            da.Fill(ds);
+
+            string xml = @"C:/Users/munga/source/repos/Invoicce_maker/Invoive_maker/dataone.xml";
+            ds.WriteXmlSchema(xml);
+
+            Crypath = @"C:/Users/munga/source/repos/Invoicce_maker/Invoive_maker/additeminvoice.rpt";
+            cr.Load(Crypath);
+            cr.SetDataSource(ds);
+            cr.Database.Tables[0].SetDataSource(ds);
+            cr.Refresh();
+            additemcrystalReportViewer.ReportSource = cr;
         }
     }
 }

@@ -264,33 +264,32 @@ namespace Invoive_maker
         private void toolStripButton11_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void maindashboardpanel_Paint(object sender, PaintEventArgs e)
-        {
             InvoicePrint ip = new InvoicePrint();
 
-            // Load the form into the panel
-            LoadFormIntoPanel8(ip);
+            // load the form into the panel
+            loadformintopanel8(ip);
         }
 
-        private void LoadFormIntoPanel8(InvoicePrint ip)
-        {
-            // Clear existing controls in the panel
-            maindashboardpanel.Controls.Clear();
+            private void loadformintopanel8(InvoicePrint ip)
+            {
+                // clear existing controls in the panel
+                maindashboardpanel.Controls.Clear();
 
-            // Set the form's TopLevel property to false
-            ip.TopLevel = false;
+                // set the form's toplevel property to false
+                ip.TopLevel = false;
 
-            // Set the form's Dock property to fill the panel
-            ip.Dock = DockStyle.Fill;
+                // set the form's dock property to fill the panel
+                ip.Dock = DockStyle.Fill;
 
-            // Add the form to the panel's controls
-            maindashboardpanel.Controls.Add(ip);
+                // add the form to the panel's controls
+                maindashboardpanel.Controls.Add(ip);
 
-            // Show the form
-            ip.Show();
-        }
+                // show the form
+                ip.Show();
+            }
+
+      
+    
 
     }
 }

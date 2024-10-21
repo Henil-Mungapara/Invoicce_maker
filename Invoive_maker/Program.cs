@@ -16,7 +16,7 @@ namespace Invoive_maker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InvoicePrint());
+            Application.Run(new Dashboard());
         }
     }
 }
