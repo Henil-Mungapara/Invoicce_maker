@@ -50,6 +50,7 @@ namespace Invoive_maker
         {
             connection();
             customerfillgrid();
+            customerlist();
 
         }
 
@@ -62,14 +63,14 @@ namespace Invoive_maker
         {
             if (addcustomercustomeradd.Text == "ADD")
             {
-               
 
+                connection();
                 if (addcustomercustomername.Text == "")
                 {
                     MessageBox.Show("Please enter value");
                 }
                 else {
-
+                 
                     cmd = new SqlCommand("insert into Add_Customer (Customer_Name,Customer_Email, Customer_Phone, Customer_City, Customer_GST) values ('" +
                   addcustomercustomername.Text + "', '" +
                   addcustomercustomeremeil.Text + "', '" +
@@ -139,6 +140,7 @@ namespace Invoive_maker
 
                 phone = (listcustomerdataGridView.Rows[e.RowIndex].Cells["Customer_Phone"].Value).ToString();
 
+
                 city = (listcustomerdataGridView.Rows[e.RowIndex].Cells["Customer_City"].Value).ToString();
 
                 gstno = (listcustomerdataGridView.Rows[e.RowIndex].Cells["Customer_GST"].Value).ToString();
@@ -180,6 +182,41 @@ namespace Invoive_maker
             cr.Database.Tables[0].SetDataSource(ds);
             cr.Refresh();
             crystalReportViewer1.ReportSource = cr;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+          
+         
+        }
+
+        void customerlist()
+        {
+            //try
+            //{
+            //    AutoCompleteStringCollection acsc = new AutoCompleteStringCollection();
+            //    connection();
+            //    String sql = "select * from Add_Customer";
+            //    cmd = new SqlCommand(sql, con);
+            //    SqlDataReader sdr = null;
+            //    sdr = cmd.ExecuteReader();
+
+            //    while (sdr.Read())
+            //    {
+            //        acsc.Add(sdr["Customer_Name"].ToString());
+            //    }
+            //    sdr.Close();
+            //    addcustomercustomerlist.AutoCompleteCustomSource = acsc;
+            //    con.Close();
+            //}
+            //catch (Exception result)
+            //{
+            //    MessageBox.Show("Error !" + result);
+            //}
+        }
+
+        private void addcustomercustomerlist_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

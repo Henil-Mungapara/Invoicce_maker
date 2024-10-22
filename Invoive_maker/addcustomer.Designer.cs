@@ -89,7 +89,7 @@ namespace Invoive_maker
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(175, 233);
+            this.label2.Location = new System.Drawing.Point(172, 179);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 25);
             this.label2.TabIndex = 3;
@@ -100,7 +100,7 @@ namespace Invoive_maker
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(175, 279);
+            this.label3.Location = new System.Drawing.Point(172, 225);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(189, 25);
             this.label3.TabIndex = 4;
@@ -111,7 +111,7 @@ namespace Invoive_maker
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(175, 323);
+            this.label4.Location = new System.Drawing.Point(172, 269);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(200, 25);
             this.label4.TabIndex = 5;
@@ -122,7 +122,7 @@ namespace Invoive_maker
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(175, 366);
+            this.label5.Location = new System.Drawing.Point(172, 312);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(147, 25);
             this.label5.TabIndex = 6;
@@ -133,7 +133,7 @@ namespace Invoive_maker
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(175, 409);
+            this.label6.Location = new System.Drawing.Point(172, 355);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(185, 25);
             this.label6.TabIndex = 7;
@@ -142,7 +142,7 @@ namespace Invoive_maker
             // addcustomercustomername
             // 
             this.addcustomercustomername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addcustomercustomername.Location = new System.Drawing.Point(413, 229);
+            this.addcustomercustomername.Location = new System.Drawing.Point(410, 175);
             this.addcustomercustomername.Multiline = true;
             this.addcustomercustomername.Name = "addcustomercustomername";
             this.addcustomercustomername.Size = new System.Drawing.Size(262, 29);
@@ -151,7 +151,7 @@ namespace Invoive_maker
             // addcustomercustomeremeil
             // 
             this.addcustomercustomeremeil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addcustomercustomeremeil.Location = new System.Drawing.Point(413, 275);
+            this.addcustomercustomeremeil.Location = new System.Drawing.Point(410, 221);
             this.addcustomercustomeremeil.Multiline = true;
             this.addcustomercustomeremeil.Name = "addcustomercustomeremeil";
             this.addcustomercustomeremeil.Size = new System.Drawing.Size(262, 29);
@@ -160,7 +160,7 @@ namespace Invoive_maker
             // addcustomercustomerphone
             // 
             this.addcustomercustomerphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addcustomercustomerphone.Location = new System.Drawing.Point(413, 319);
+            this.addcustomercustomerphone.Location = new System.Drawing.Point(410, 265);
             this.addcustomercustomerphone.Multiline = true;
             this.addcustomercustomerphone.Name = "addcustomercustomerphone";
             this.addcustomercustomerphone.Size = new System.Drawing.Size(262, 29);
@@ -169,7 +169,7 @@ namespace Invoive_maker
             // addcustomercustomercity
             // 
             this.addcustomercustomercity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addcustomercustomercity.Location = new System.Drawing.Point(413, 362);
+            this.addcustomercustomercity.Location = new System.Drawing.Point(410, 308);
             this.addcustomercustomercity.Multiline = true;
             this.addcustomercustomercity.Name = "addcustomercustomercity";
             this.addcustomercustomercity.Size = new System.Drawing.Size(262, 29);
@@ -178,7 +178,7 @@ namespace Invoive_maker
             // addcustomercustomergstno
             // 
             this.addcustomercustomergstno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addcustomercustomergstno.Location = new System.Drawing.Point(413, 405);
+            this.addcustomercustomergstno.Location = new System.Drawing.Point(410, 351);
             this.addcustomercustomergstno.Multiline = true;
             this.addcustomercustomergstno.Name = "addcustomercustomergstno";
             this.addcustomercustomergstno.Size = new System.Drawing.Size(262, 29);
@@ -189,7 +189,7 @@ namespace Invoive_maker
             this.addcustomercustomeradd.BackColor = System.Drawing.Color.Teal;
             this.addcustomercustomeradd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.addcustomercustomeradd.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addcustomercustomeradd.Location = new System.Drawing.Point(170, 466);
+            this.addcustomercustomeradd.Location = new System.Drawing.Point(167, 412);
             this.addcustomercustomeradd.Name = "addcustomercustomeradd";
             this.addcustomercustomeradd.Size = new System.Drawing.Size(120, 41);
             this.addcustomercustomeradd.TabIndex = 14;
@@ -202,7 +202,7 @@ namespace Invoive_maker
             this.addcustomercustomercancel.BackColor = System.Drawing.Color.Teal;
             this.addcustomercustomercancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.addcustomercustomercancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addcustomercustomercancel.Location = new System.Drawing.Point(313, 466);
+            this.addcustomercustomercancel.Location = new System.Drawing.Point(310, 412);
             this.addcustomercustomercancel.Name = "addcustomercustomercancel";
             this.addcustomercustomercancel.Size = new System.Drawing.Size(137, 41);
             this.addcustomercustomercancel.TabIndex = 15;
@@ -304,7 +304,7 @@ namespace Invoive_maker
             this.addcustomerinvoice.BackColor = System.Drawing.Color.Teal;
             this.addcustomerinvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.addcustomerinvoice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addcustomerinvoice.Location = new System.Drawing.Point(470, 466);
+            this.addcustomerinvoice.Location = new System.Drawing.Point(467, 412);
             this.addcustomerinvoice.Name = "addcustomerinvoice";
             this.addcustomerinvoice.Size = new System.Drawing.Size(205, 41);
             this.addcustomerinvoice.TabIndex = 21;
@@ -317,9 +317,9 @@ namespace Invoive_maker
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(706, 112);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(706, 179);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(869, 527);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(869, 452);
             this.crystalReportViewer1.TabIndex = 22;
             // 
             // addcustomer

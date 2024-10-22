@@ -42,6 +42,10 @@ namespace Invoive_maker
             this.enddateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.selectdate = new System.Windows.Forms.Label();
             this.invoiceprintcomboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.invoiceprintcustomername = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.invoiceprintitemname = new System.Windows.Forms.TextBox();
             this.invoiceprinttoolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +91,7 @@ namespace Invoive_maker
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(513, 130);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(503, 191);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.Size = new System.Drawing.Size(1255, 734);
             this.crystalReportViewer1.TabIndex = 12;
@@ -107,7 +111,7 @@ namespace Invoive_maker
             // 
             this.specificdatedateTimePicker.Location = new System.Drawing.Point(177, 191);
             this.specificdatedateTimePicker.Name = "specificdatedateTimePicker";
-            this.specificdatedateTimePicker.Size = new System.Drawing.Size(231, 22);
+            this.specificdatedateTimePicker.Size = new System.Drawing.Size(261, 22);
             this.specificdatedateTimePicker.TabIndex = 14;
             // 
             // startdateLabel
@@ -136,14 +140,14 @@ namespace Invoive_maker
             // 
             this.startdateTimePicker.Location = new System.Drawing.Point(177, 242);
             this.startdateTimePicker.Name = "startdateTimePicker";
-            this.startdateTimePicker.Size = new System.Drawing.Size(231, 22);
+            this.startdateTimePicker.Size = new System.Drawing.Size(261, 22);
             this.startdateTimePicker.TabIndex = 17;
             // 
             // enddateTimePicker
             // 
             this.enddateTimePicker.Location = new System.Drawing.Point(177, 278);
             this.enddateTimePicker.Name = "enddateTimePicker";
-            this.enddateTimePicker.Size = new System.Drawing.Size(231, 22);
+            this.enddateTimePicker.Size = new System.Drawing.Size(261, 22);
             this.enddateTimePicker.TabIndex = 18;
             // 
             // selectdate
@@ -162,18 +166,67 @@ namespace Invoive_maker
             this.invoiceprintcomboBox.FormattingEnabled = true;
             this.invoiceprintcomboBox.Items.AddRange(new object[] {
             "Specific Range",
-            "Specific Date"});
+            "Specific Date",
+            "All Over"});
             this.invoiceprintcomboBox.Location = new System.Drawing.Point(177, 134);
             this.invoiceprintcomboBox.Name = "invoiceprintcomboBox";
-            this.invoiceprintcomboBox.Size = new System.Drawing.Size(231, 24);
+            this.invoiceprintcomboBox.Size = new System.Drawing.Size(261, 24);
             this.invoiceprintcomboBox.TabIndex = 20;
             this.invoiceprintcomboBox.TextChanged += new System.EventHandler(this.invoiceprintcomboBox_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(498, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 25);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Search Customer :";
+            // 
+            // invoiceprintcustomername
+            // 
+            this.invoiceprintcustomername.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.invoiceprintcustomername.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.invoiceprintcustomername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoiceprintcustomername.Location = new System.Drawing.Point(687, 134);
+            this.invoiceprintcustomername.Name = "invoiceprintcustomername";
+            this.invoiceprintcustomername.Size = new System.Drawing.Size(262, 27);
+            this.invoiceprintcustomername.TabIndex = 22;
+            this.invoiceprintcustomername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(987, 136);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 25);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Search Item :";
+            // 
+            // invoiceprintitemname
+            // 
+            this.invoiceprintitemname.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.invoiceprintitemname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.invoiceprintitemname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoiceprintitemname.Location = new System.Drawing.Point(1123, 137);
+            this.invoiceprintitemname.Name = "invoiceprintitemname";
+            this.invoiceprintitemname.Size = new System.Drawing.Size(262, 27);
+            this.invoiceprintitemname.TabIndex = 24;
+            this.invoiceprintitemname.TextChanged += new System.EventHandler(this.invoiceprintitemname_TextChanged);
             // 
             // InvoicePrint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.Controls.Add(this.invoiceprintitemname);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.invoiceprintcustomername);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.invoiceprintcomboBox);
             this.Controls.Add(this.selectdate);
             this.Controls.Add(this.enddateTimePicker);
@@ -212,5 +265,9 @@ namespace Invoive_maker
         private System.Windows.Forms.DateTimePicker enddateTimePicker;
         private System.Windows.Forms.Label selectdate;
         private System.Windows.Forms.ComboBox invoiceprintcomboBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox invoiceprintcustomername;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox invoiceprintitemname;
     }
 }

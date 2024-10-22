@@ -41,6 +41,7 @@ namespace Invoive_maker
             connection();
             itemfillgrid();
             gridset();
+           // itemlist();
 
         }
         void connection()
@@ -241,5 +242,39 @@ namespace Invoive_maker
             cr.Refresh();
             additemcrystalReportViewer.ReportSource = cr;
         }
+
+        private void additemitemlist_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+            
+        
+
+        //void itemlist()
+        //{
+        //    try
+        //    {
+        //        AutoCompleteStringCollection acsc = new AutoCompleteStringCollection();
+        //        con = new SqlConnection(s);
+        //        con.Open();
+        //        String sql = "select * from Add_Item";
+        //        cmd = new SqlCommand(sql, con);
+        //        SqlDataReader sdr = null;
+        //        sdr = cmd.ExecuteReader();
+
+        //        while (sdr.Read())
+        //        {
+        //            acsc.Add(sdr["Item_Name"].ToString());
+        //        }
+        //        sdr.Close();
+        //        additemitemlist.AutoCompleteCustomSource = acsc;
+        //        con.Close();
+        //    }
+        //    catch (Exception result)
+        //    {
+        //        MessageBox.Show("Error !" + result);
+        //    }
+        //}
     }
 }
