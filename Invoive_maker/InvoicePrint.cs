@@ -83,7 +83,15 @@ namespace Invoive_maker
 
             else if (invoiceprintcomboBox.Text == "All Over")
             {
-        // Default query if no specific date is selected
+                // Default query if no specific date is selected
+                query = "SELECT * FROM Invoice_Make";
+                da = new SqlDataAdapter(query, con);
+            }
+
+            else
+            {
+                // Default query if no specific date is selected
+                MessageBox.Show("Your All Over Data Will Be Show In Invoise !!");
                 query = "SELECT * FROM Invoice_Make";
                 da = new SqlDataAdapter(query, con);
             }
